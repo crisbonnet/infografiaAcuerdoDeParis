@@ -1,0 +1,934 @@
+﻿*{
+  padding:0%;
+  margin: 0%;
+}
+:root{
+
+  --fondo: #2b353b;
+  --texto-blanco: #fff;
+  --texto-celeste: #44c0c4;
+  --rojo: #c54320;
+  --tarjeta-plana: #035263;
+  --tarjeta-borde: #82bcbe;
+  --circulo-timeline: #088c96;
+  --linea-timeline: #44c0c4;
+  --flecha-nav: #a0a0a0;
+}
+
+body{
+  background-color: var(--fondo);
+}
+
+
+h1{margin-top: 1%;
+  color: var(--texto-blanco);
+  text-align: center;
+  font-size: 2vW;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  /*display:none;*/
+}
+
+h3{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6vW;
+  font-style: bold;
+  color: var(--texto-blanco);
+}
+
+p{
+  color: var(--texto-blanco);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5vW;
+}
+
+svg{
+  position: relative;
+  bottom: 1rem;
+}
+
+/*MENÚ RESPONSIVE*/
+/*ESQUELETO*/
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  width: 89%;
+  padding-left: 11%;
+
+}
+
+/*DETALLES*/
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  font-family: "Quicksand";
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 15px;
+
+}
+
+/*POR DONDE PASA EL MOUSE*/
+.topnav a:hover {
+  background-color:var(--texto-celeste);
+  color: black;
+}
+
+/*EL ACTIVO*/
+.topnav a.active {
+  background-color: #088c96;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+/*MENÚ RESPONSIVE*/
+.suiza-1979{
+  display:block ;
+}
+
+.brasil-1992{
+  display: none;
+}
+
+.alemania-1995{
+  display: none;
+}
+
+.japon-1997{
+  display:none;
+}
+
+.indonesia-2007{
+  display:none;
+}
+
+.dinamarca-2009{
+  display:none;
+}
+
+.mexico-2010{
+  display:none;
+}
+
+.polonia-2013{
+  display:none;
+}
+
+.francia-2015{
+  display:none;
+}
+
+#ayuda{
+  width:42%;
+}
+
+.container-timeline{
+  margin: 3% 10% 3% 13%;
+}
+
+.bandera{
+  width:20%;
+  float:left;
+  border-radius: 10px;
+  /*background-color: #fff;*/
+  cursor: alias;
+}
+
+.chica-suiza{
+  width: 45%;
+  margin-top: 11%;
+  margin-left: 10%;
+  clear: both;
+}
+
+.chica-alemania{
+  margin-top:10%;
+  margin-left: 16%;
+}
+
+.chiques-indonesia{
+  clear:both;
+  width:70%;
+  margin-top: 9%;
+  position:relative;
+  right:12%;
+}
+
+.chico-dinamarca{
+  clear:both;
+  width:77%;
+  margin-top:6%;
+  margin-left:3%;
+}
+
+.chicas-francia{
+  width: 69%;
+  margin-top: 7%;
+  position: relative;
+  right: 3%;
+}
+
+.container{
+  margin-top: 4%;
+  margin-left: 12%;
+  margin-bottom: 2%;
+  padding-right: 10%;
+}
+
+
+/*//////////////////////////TIMELINE ///////////////////////////////////////////////////*/
+.circulo {
+  width: 3rem;
+  height: 3rem;  /*no permite cambiar a %*/
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #fff;
+  border: 4px solid var(--circulo-timeline);
+  cursor:pointer;
+}
+
+.circulo-activo{
+  background-color:var(--circulo-timeline);
+  border: 4px solid var(--texto-blanco);
+  width: 4rem;
+  height: 4rem;  /*no permite cambiar a %*/
+  position:relative;
+  margin: -7%;
+  z-index:  3;
+
+}
+
+.circulo-centrar {
+  padding-left: 0.3rem;
+  padding-top: 0.8rem;
+  font-weight: 400;
+  font-size: 1rem;
+  color:var(--flecha-nav);
+}
+
+.circulo-centrar-activo{
+  padding-left: 0.6rem;
+  padding-top: 1.15rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--texto-blanco)
+
+}
+
+/*//////////////////////////TIMELINE ///////////////////////////////////////////////////*/
+
+.col-der{
+  float: left;
+  width: 48%;
+  /*background-color: #a0a0a0;*/
+  height:400px;
+  margin-top: 40px;
+}
+
+.col-izq{
+  float: left;
+  width: 48%;
+  /* background-color: #82bcbe;*/
+  /*height:80%;*/
+  margin-top: 40px;
+}
+
+
+.col-timeline{
+  float:left;
+  width:11%;
+}
+
+#epigrafe{
+  font-size: 70%;;
+}
+.frase{
+  float: left;
+  clear: both;
+}
+
+.humor{
+  margin-top:7%;
+}
+
+
+#logo-cumbre{
+  float:right;
+  position:relative;
+  bottom: 7rem;
+  right:1.6rem;
+
+}
+
+#logo-cumbre2{
+  float:right;
+  position:relative;
+  bottom: 9rem;
+  right:2.5rem;
+}
+
+/*-------------------BARRA DE PROGRESO----*/
+
+#myProgress {
+  width: 70%;
+  background-color: #ddd;
+  margin-top: 0%;
+  margin-left: 13%;
+  position: relative;
+  top:1.5rem;
+  z-index: -1;
+}
+
+#myBar {
+  width: 1%;
+  height: 5px;
+  background-color:var(--circulo-timeline)
+}
+
+
+.pais{
+  padding-left: 15px;
+  width: 67%;
+  float: left;
+  position:relative;
+  top:2.2rem;
+}
+
+.periodicos{
+  width:68%;
+  margin-top: 4%;
+  margin-left:3%;
+}
+
+.row{
+  width:99%;
+  margin-bottom: 1rem;
+  padding-bottom: 0rem;
+  clear: both;
+}
+
+#ru-jap-can{
+  width:74%;
+  margin-left:12%;
+  margin-top:3%;
+}
+
+.tarjeta-borde-alemania{
+  border-color: var(--tarjeta-borde);
+  border-radius: 15px;
+  width: 77%;
+  height: 30vh;
+  border: 4px solid var(--tarjeta-borde);
+  position: relative;
+  top: 6vh;
+  clear: both;
+}
+
+.tarjeta-borde-alemania p{
+  position:relative;
+  padding-left: 1.5rem;
+  padding-top: 2%;
+}
+
+.tarjeta-borde-brasil{
+  border-color: var(--tarjeta-borde);
+  border-radius: 15px;
+  width: 85%;
+  height: 28vh;
+  border: 4px solid var(--tarjeta-borde);
+  position: relative;
+  top: 3vh;
+  clear: both;
+}
+
+.tarjeta-borde-brasil p{
+  position:relative;
+  bottom:-1.1rem;
+  padding-left: 1.5rem;
+}
+
+.tarjeta-borde-mexico{
+  border-color: var(--tarjeta-borde);
+  border-radius: 15px;
+  width: 85%;
+  height: 41vh;
+  border: 4px solid var(--tarjeta-borde);
+  position: relative;
+  top: 2vh;
+  clear: both;
+}
+
+.tarjeta-borde-mexico p{
+  padding-left: 1.7rem;
+}
+
+.tarjeta-borde-polonia{
+  border-color: var(--tarjeta-borde);
+  border-radius: 15px;
+  width: 85%;
+  height:34%;
+  border: 4px solid var(--tarjeta-borde);
+  clear: both;
+  margin-left: 14%;
+  margin-top: 7%;
+}
+
+.tarjeta-borde-polonia p{
+  padding-left: 10rem;
+  padding-top: 1.3rem;
+}
+
+.tarjeta-borde-polonia img{
+  width:20%;
+  padding-left: 2.2rem;
+  padding-top: 1.2rem;
+  float:left;
+}
+
+.tarjeta-plana-polonia .text{
+  position: relative;
+  left: 1.5rem;
+  bottom:0rem;
+}
+
+.tarjeta-plana-alemania{
+  width: 85%;
+  height: 59%;
+  border-radius: 5%;
+  background: var(--tarjeta-plana);
+  margin-left: 14%;
+}
+
+.tarjeta-plana-alemania p{
+  padding-left: 3.2rem;
+  padding-top: 1.3rem;
+}
+
+.tarjeta-plana-alemania img{
+  padding-left: 3.2rem;
+  padding-top: 2.2rem;
+  float:left;
+}
+
+.tarjeta-plana-alemania .text{
+  position: relative;
+  left: 1.5rem;
+  bottom:0rem;
+  font-style: italic;
+}
+
+
+.tarjeta-plana-brasil{
+  width: 85%;
+  height: 99.8%;
+  border-radius: 5%;
+  background: var(--tarjeta-plana);
+  margin-left: 14%;
+}
+
+.tarjeta-plana-brasil p{
+  padding-left: 2rem;
+  padding-top: 1.3rem;
+  padding-right: 3.2rem;
+}
+
+.tarjeta-plana-brasil img{
+  padding-left: 3.2rem;
+  padding-top: 2rem;
+  float:left;
+}
+
+.tarjeta-plana-brasil .text{
+  float:left;
+}
+
+.tarjeta-plana-brasil .row{
+  margin-top:5%;
+}
+
+.tarjeta-plana-dinamarca{
+  width: 85%;
+  height: 99.8%;
+  border-radius: 5%;
+  background: var(--tarjeta-plana);
+  margin-left: 14%;
+}
+
+.tarjeta-plana-dinamarca p{
+  padding-left: 3.2rem;
+  padding-top: 1.3rem;
+}
+
+.tarjeta-plana-dinamarca img{
+  padding-left: 3.2rem;
+  padding-top: 2rem;
+  float:left;
+}
+
+.tarjeta-plana-dinamarca .text{
+  float:left;
+}
+
+.tarjeta-plana-dinamarca .row{
+  margin-top:2%;
+}
+
+.tarjeta-plana-francia{
+  width: 85%;
+  height: 99.8%;
+  border-radius: 5%;
+  background: var(--tarjeta-plana);
+  margin-left: 14%;
+}
+
+.tarjeta-plana-francia p{
+  padding-left: 0rem;
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
+.tarjeta-plana-francia img{
+  padding-left: 3.2rem;
+  padding-top: 2rem;
+  float:left;
+}
+
+.tarjeta-plana-francia .text{
+  float: left;
+  width: 46%;
+  text-align: left;
+  margin-left: 8%;
+}
+
+.tarjeta-plana-francia .row{
+  margin-top:4%;
+}
+
+.tarjeta-plana-francia .plano{
+  width:29%
+}
+
+.tarjeta-plana-francia .balanza{
+  padding-top: 2%;
+}
+
+.tarjeta-plana-francia .balanza p{
+  width: 41%;
+  margin-left: 13%;
+}
+
+.tarjeta-plana-francia .balanza img{
+  width:25%;
+}
+
+.tarjeta-plana-indonesia{
+  width: 85%;
+  height: 99.8%;
+  border-radius: 5%;
+  background: var(--tarjeta-plana);
+  margin-left: 14%;
+}
+
+.tarjeta-plana-indonesia p{
+  padding-left: 2.2rem;
+  padding-top: 2.3rem;
+}
+
+.tarjeta-plana-indonesia img{
+  padding-left: 3.2rem;
+  padding-top: 2rem;
+  float:left;
+}
+
+.tarjeta-plana-indonesia .text{
+  float:left;
+}
+
+.tarjeta-plana-indonesia .row{
+  margin-top:4%;
+}
+
+.tarjeta-plana-japon{
+  width: 85%;
+  height: 99.8%;
+  border-radius: 5%;
+  background: var(--tarjeta-plana);
+  margin-left: 14%;
+}
+
+.tarjeta-plana-japon p{
+  padding-left: 3.2rem;
+  padding-top: 1.3rem;
+}
+
+.tarjeta-plana-japon img{
+  padding-left: 3.2rem;
+  padding-top: 2rem;
+  float:left;
+}
+
+.tarjeta-plana-japon .text{
+  float:left;
+}
+
+.tarjeta-plana-japon .row{
+  margin-top:2%;
+}
+
+
+
+.tarjeta-plana-mexico{
+  width: 85%;
+  height: 99.8%;
+  border-radius: 5%;
+  background: var(--tarjeta-plana);
+  margin-left: 14%;
+}
+
+.tarjeta-plana-mexico p{
+
+}
+
+.tarjeta-plana-mexico img{
+  padding-left: 4rem;
+  padding-top: 1rem;
+  width: 30%;
+}
+
+.tarjeta-plana-mexico .text{
+  text-align: center;
+  font-size: 95%;
+}
+
+.tarjeta-plana-mexico .row{
+  margin-top:10%;
+}
+
+.tarjeta-plana-mexico .impar{
+  float:left;
+  width:40%;
+  margin-left: 7%;
+}
+
+.tarjeta-plana-mexico .par{
+  float:left;
+  width:40%;
+  margin-left: 5%;
+}
+
+.tarjeta-plana-mexico .par img{
+  width: 35%;
+}
+
+.tarjeta-plana-polonia{
+  width: 85%;
+  height: 52%;
+  border-radius: 5%;
+  background: var(--tarjeta-plana);
+  margin-left: 14%;
+}
+
+.tarjeta-plana-polonia p{
+  padding-left: 5rem;
+  padding-top: 1.3rem;
+}
+
+.tarjeta-plana-polonia img{
+  padding-left: 2.2rem;
+  padding-top: 1.2rem;
+  float:left;
+  width:20%;
+}
+
+.tarjeta-plana-polonia .text{
+  position: relative;
+  left: 1.5rem;
+  bottom:0rem;
+  font-style: italic;
+}
+
+
+.tarjeta-plana-suiza{
+  width: 85%;
+  height: 99.8%;
+  border-radius: 5%;
+  background: var(--tarjeta-plana);
+  margin-left: 14%;
+}
+
+
+.tarjeta-plana-suiza .letra-suiza {
+  padding: 7% 9% 7% 9%;
+  font-size: 1.3vw;
+  font-weight: 600;
+}
+
+.tarjeta-plana-suiza img{
+  padding-left: 3.2rem;
+  padding-top: 1rem;
+}
+
+.tarjeta-plana-suiza .row{
+  padding-bottom: 0;
+  margin-bottom: 0rem;
+  height:30%;
+  clear: both;
+}
+
+.tarjeta-plana-suiza .text{
+  position: relative;
+  left: 9.6rem;
+  bottom:5.7rem;
+}
+
+#tilde2{
+  padding-right: 4rem;
+}
+
+.timeline{
+  margin-top: 3%;
+}
+
+
+.titulo{
+  text-align: center;
+  padding-left:0rem;
+  padding-top: 5%;;
+}
+
+#tit-bali{
+  text-align: center;
+  padding-left: 0vw;
+}
+
+#tit-copenhague{
+  text-align: center;
+  padding-left: 0vw;
+}
+
+/*MEDIA QUERY*/
+@media screen and (max-width: 640px) {
+  .topnav{
+    padding-left: 0%;
+  }
+
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav {
+    position: relative;
+    width: 100%;
+  }
+
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  /*Fechas*/
+  .container-timeline{
+    margin: 3% 10% 3% 10%;
+    overflow-x: scroll;
+    display: flex;
+    padding: 2% 0% 2% 0%;
+  }
+
+  .col-timeline{
+    float:left;
+    width:auto;
+    padding-right: 10px;
+  }
+
+  #myProgress {
+    position: absolute;
+    top:7.6rem;
+  }
+
+  .col-der{
+    float: none;
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .col-izq{
+    float: none;
+    width: 100%;
+    margin-top: 40px;
+  }
+  .bandera {width: 40%;}
+  .pais {padding-left: 10px; top: 0.5rem;}
+  h3 {font-size: 4vW;}
+  .frase {margin-top:4%;}
+  p {font-size: 2.4vw;}
+
+  .chica-suiza {margin: -35% 3% 0% 0%; width:50%;}
+  .tarjeta-plana-suiza{
+    width: 100%;
+    margin-left: 0%;
+    padding-bottom: 20%;
+  }
+  .tarjeta-plana-suiza .letra-suiza {
+    padding: 7% 9% 7% 9%;
+    font-size: 3.4vw;
+    font-weight: 600;
+  }
+  .tarjeta-plana-suiza .row img{
+    padding-top: 1rem;
+    width: 25%;
+  }
+  .tarjeta-plana-suiza .row2 img{
+    padding-top: 4rem;
+    width: 25%;
+  }
+  .tarjeta-plana-suiza .text{
+    position: relative;
+    left: 10.5rem;
+    bottom: 6rem;
+    font-size: 17px;
+  }
+
+  .brasil-1992 h3 { margin: -35% 0% 0% 40%; }
+  .brasil-1992 .frase { margin: -24% 2% 2% 42.5%; }
+  .tarjeta-borde-brasil { width: 100%; height: 18vh; top: 1vh; }
+  .tarjeta-borde-brasil p {font-size: 3vw;}
+  #logo-cumbre { bottom: 4rem; width: 17%;}
+  .tarjeta-plana-brasil {height: 100%; width: 100%; margin-left: 0%;}
+  .tarjeta-plana-brasil img {width: 15%;}
+  .tarjeta-plana-brasil .text {padding-left: 5%; padding-top: 11%; font-size: 3vw;}
+  .tarjeta-plana-brasil p {font-size: 3.4vw; padding-right: 3.2rem;}
+
+  .alemania-1995 h3 { margin: -35% 0% 0% 40%; }
+  .alemania-1995 .frase { margin: -24% 2% 2% 42.5%; }
+  .tarjeta-borde-alemania { width: 100%; height: 19vh; top: 1vh; }
+  .tarjeta-borde-alemania p {font-size: 3vw;}
+  #logo-cumbre2 { bottom: 6rem; width: 17%;}
+  .tarjeta-plana-alemania {width: 100%; height:50% ;margin-left: 0%;}
+  .tarjeta-plana-alemania p {font-size: 3vw; padding-top: 1.5rem;}
+  .chica-alemania {margin-left: 0%; width: 100%;}
+
+  .japon-1997 h3 { margin: -34% 0% 0% 44%; }
+  .japon-1997 .frase { margin: -22% 2% 2% 46.5%; }
+  .periodicos {width: 90%;}
+  .tarjeta-plana-japon {width: 100%; margin-left: 0%; height: 90%;}
+  .tarjeta-plana-japon p {font-size: 3vw; padding-top: 8%;}
+
+  .indonesia-2007 h3 { margin: -36% 0% 0% 43%; }
+  .indonesia-2007 .frase { margin: -23% 2% 2% 45.5%; }
+  .chiques-indonesia {width: 100%; right: 0%; margin-top: -6%;}
+  .tarjeta-plana-indonesia {width: 100%; height: 85%; margin-left: 0%;}
+  .tarjeta-plana-indonesia p {font-size: 3vw;}
+
+  .dinamarca-2009 h3 { margin: -30% 0% 0% 40%; }
+  .dinamarca-2009 .frase { margin: -18% 2% 2% 42.5%; }
+  .chico-dinamarca {width: 100%; margin-left: 0%;}
+  .tarjeta-plana-dinamarca {width: 100%; height: 95%; margin-left: 0%;}
+  .tarjeta-plana-dinamarca p {font-size: 3vw; padding-top: 2rem;}
+
+  .mexico-2010 h3 { margin: -26% 0% 0% 40%; }
+  .mexico-2010 .frase { margin: -15% 2% 2% 42.5%; }
+  .tarjeta-borde-mexico { width: 100%; height: 32vH; top: 1vh; }
+  .tarjeta-borde-mexico p {font-size: 1rem;}
+  .tarjeta-plana-mexico {width: 100%; height: 85%; margin-left: 0%;}
+  .tarjeta-plana-mexico img {padding-left: 3rem;}
+
+  .polonia-2013 h3 { margin: -30% 0% 0% 43%; }
+  .polonia-2013 .frase { margin: -17% 2% 2% 46.5%; }
+  .humor {width: 100%;}
+  .tarjeta-plana-polonia {width: 100%; height: 50%; margin-left: 0%;}
+  .tarjeta-plana-polonia p {font-size: 1rem;}
+  .tarjeta-borde-polonia {width: 100%; height: 30%; margin-left: 0%;}
+  .tarjeta-borde-polonia p {font-size: 3vw; padding-top: 2rem;}
+
+  .francia-2015 h3 { margin: -28% 0% 0% 40%; }
+  .francia-2015 .frase { margin: -15% 2% 2% 42.5%; }
+  .chicas-francia {width: 100%; right: 0%;}
+  .tarjeta-plana-francia {width: 100%; height: 83%; margin-left: 0%;}
+  .tarjeta-plana-francia p {font-size: 1rem;}
+}
+
+/*LIGHTBOX*/
+
+.popup {
+  width: 550px;
+  height: 300px;
+  position: absolute;
+  left: 28%;
+  top: 30%;
+  z-index: 100001;
+  background: #2b353b;
+  padding-Right: 20px;
+  border-Radius: 15px;
+}
+
+.cerrar {
+  width: 27px;
+  height: 25px;
+  position: absolute;
+  margin-Left: 538px;
+  margin-Top: 14px;
+}
+
+.contenidop {
+  height: 330px;
+  margin-Left: 15px;
+  margin-Top: 8%;
+  text-Align: center;
+  word-Wrap: break-word;
+  font-Family: 'Open Sans';
+  color: #fff;
+}
+
+/*media*/
+
+@media screen and (max-width: 640px) {
+  .popup {
+    width: 350px;
+    height: 300px;
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    z-index: 100001;
+    background: #2b353b;
+    padding-Right: 20px;
+    border-Radius: 15px;
+  }
+
+  .cerrar {
+    width: 27px;
+    height: 25px;
+    position: absolute;
+    margin-Left: 335px;
+    margin-Top: 14px;
+  }
+
+  .contenidop {
+    height: 330px;
+    margin-Left: 15px;
+    margin-Top: 8%;
+    text-Align: center;
+    word-Wrap: break-word;
+    font-Family: 'Open Sans';
+    color: #fff;
+  }
+
+}

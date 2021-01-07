@@ -1,0 +1,274 @@
+*{
+  padding:0%;
+  margin: 0%;
+}
+:root{
+
+  --fondo: #2b353b;
+  --texto-blanco: #fff;
+  --texto-celeste: #44c0c4;
+  --rojo: #c54320;
+  --tarjeta-plana: #035263;
+  --tarjeta-borde: #82bcbe;
+  --circulo-timeline: #088c96;
+  --linea-timeline: #44c0c4;
+  --flecha-nav: #a0a0a0;
+
+}
+.fondo {
+  background: var(--fondo);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0vh;
+  z-index: 1;
+}
+
+.introduccion {
+  padding-top: 2%;
+  padding-bottom: 1%;
+  text-align: center;
+  font-family: 'Quicksand';
+  font-weight: normal;
+  font-size: 28px;
+  color: #44c0c4;
+}
+
+.container-todo {
+  display: inline-flex;
+  margin: 5% 15% 0% 15%;
+}
+
+.botones{
+  padding-left: 7vw;
+}
+
+.button {
+  float: left;
+  width: 65%;
+  text-align: center;
+  font-family: "Open Sans";
+  letter-spacing: 0.008em;
+  font-weight: normal;
+  font-size: 18px;
+  color: white;
+  background-color: var(--tarjeta-plana);
+  border-radius: 10px;
+  border: 0px;
+  margin-top: 9%;
+  padding: 2% 0% 2% 0%;
+}
+
+.mundo {
+  float: right;
+  width: 80%;
+  border-radius: 50%;
+  padding-right: 4vw;
+}
+
+.mundo-img
+{ width: 100%;
+  z-index: 0;
+  display:block;
+}
+
+.respuestas {
+  text-align: center;
+  font-family: "Open Sans";
+  font-weight: normal;
+  font-size: 1.6vw;
+  color: var(--fondo);
+  padding: 0% 15% 0% 15%;
+}
+
+
+.resp-fondo{
+  float: right;
+  width: 24.2vw;
+  padding-right: 0vw;
+  position: relative;
+  bottom: 53vh;
+  left: 2.6vw;
+}
+
+.respuesta1{
+  z-index: 2;
+  border-radius: 50%;
+  display: none;
+
+}
+
+.respuesta1 p{
+  position: relative;
+    bottom: 83.5vh;
+    width: 73%;
+    padding-left: 2.8vw;
+}
+
+.respuesta2{
+  z-index: 2;
+  border-radius: 50%;
+  display: none;
+}
+
+.respuesta2 p{
+  position: relative;
+  bottom: 83.5vh;
+  width: 73%;
+  padding-left: 2.8vw;
+}
+
+.respuesta3{
+  z-index: 2;
+  border-radius: 50%;
+  display: none;
+}
+
+.respuesta3 p{
+  position: relative;
+    bottom: 83.5vh;
+    width: 78%;
+    padding-left: 2.1vw;
+}
+
+.respuesta4{
+  z-index: 2;
+  border-radius: 50%;
+  display: none;
+}
+
+.respuesta4 p{
+  position: relative;
+  bottom: 83.5vh;
+  width: 78%;
+  padding-left: 2.2vw;
+}
+
+
+.hoja {
+  width: 2.5%;
+  margin: -23% 0% 0% 7.5%;
+  position: absolute;
+  z-index: 1;
+}
+
+.saltar {
+  font-size: 1.2rem;
+  color: var(--flecha-nav);
+  position: absolute;
+  top:88%;
+  left: 47%;
+  font-family: 'Quicksand';
+}
+
+.saltar-nav {
+  position: relative;
+  top:4rem;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+@media screen and (max-width: 640px) {
+  body {margin: 5% 20px 0% 20px;}
+  h1 {padding-top: 5%;}
+
+  .container-todo {
+    display: inline-grid;
+    width: 100%;
+    margin: 0%;
+  }
+
+  .mundo {
+    float: none;
+    width: 60%;
+    margin-top: -111%;
+    margin-left: 18%;
+  }
+
+  .botones {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 70%;
+    z-index:99;
+  }
+
+  .button {
+    width: 80%;
+    margin: 3% 0% 0% 0%;
+  }
+.hoja {display: none;}
+
+
+.respuestas {
+  text-align: center;
+  font-family: "Open Sans";
+  font-weight: normal;
+  font-size: 4.1vw;
+  color: var(--fondo);
+  padding: 0% 15% 0% 15%;
+}
+
+.resp-fondo{
+  float: none;
+  width: 130%;
+  margin-top: 54%;
+  margin-left: -21%;
+}
+
+
+.respuesta1 {
+  z-index: 2;
+  border-radius: 50%;
+  display: none;
+}
+
+
+.respuesta1 p{
+  padding-top: 5.3vh;
+  width: 74%;
+  padding-left: 6.4vw;
+}
+
+.respuesta2 {
+  z-index: 2;
+  border-radius: 50%;
+  display: none;
+}
+
+.respuesta2 p{
+  padding-top: 5.3vh;
+  width: 75%;
+  padding-left: 5.8vw;
+}
+
+.respuesta3 {
+  z-index: 2;
+  border-radius: 50%;
+  display: none;
+}
+
+.respuesta3 p{
+  padding-top: 5vh;
+  width: 90%;
+  padding-left: 2.4vw;
+}
+
+.respuesta4 {
+  z-index: 2;
+  border-radius: 50%;
+  display: none;
+}
+
+.respuesta4 p{
+  padding-top: 5.3vh;
+  width: 89%;
+  padding-left: 2.4vw;
+}
+
+.saltar {
+    top: 95%;
+    left: 41%;
+  }
+
+}

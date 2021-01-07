@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+
+<html lang="es" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Situacion mundial</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+  <link rel="stylesheet" href="css/mapacss.css">
+  <link rel="stylesheet" href="css/tarjetas.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html">Home</a>
+    <a href="cumbres.html">Cumbres Relevantes</a>
+    <a href="mapa.html" class="active">Situación mundial</a>
+    <a href="plan de accion.html">Ejes del Acuerdo</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+
+  <div class="contenedor">
+
+    <img src="img/mapageo/Mapamundial.png" class="mapa">
+
+    <img src="img/mapageo/Canada.png" class="canada zoom" id="can" alt="Canadá" title="Canadá">
+
+    <img src="img/mapageo/Estadosunidos.png" class="estadosunidos zoom" id="eeuu" alt="Estados Unidos" title="Estados Unidos">
+
+    <img src="img/mapageo/Mexico.png" class="mexico zoom" alt="México" id="mx" title="México">
+
+    <img src="img/mapageo/Argentina.png" class="argentina zoom" id="arg" alt="Argentina" title="Argentina">
+
+    <img src="img/mapageo/Peru.png" class="peru zoom" id="peru" alt="Perú" title="Perú">
+
+    <img src="img/mapageo/Brasil.png" class="brasil zoom" id="br" alt="Brasil" title="Brasil">
+
+    <img src="img/mapageo/China.png" class="china zoom" id="china" alt="China" title="China">
+
+    <img src="img/mapageo/Turquia.png" class="turquia zoom" id="tq" alt="Turquía" title="Turquía">
+
+    <img src="img/mapageo/India.png" class="india zoom" id="india" alt="India" title="India">
+
+    <img src="img/mapageo/Indonesia.png" class="indonesia zoom" id="indo" alt="Indonesia" title="Indonesia">
+
+  </div>
+
+ <!--////////////////////////////BASICA/////////////////////////////////-->
+ <div class="col-izq basica">
+  <div class="tarjeta" id="tjta-fija" >
+
+   <!-- <div class="tooltip"><img class="info-arg" src="img/paises/info.png">
+      <span class="tooltiptext" style="width:200px;">El país trabaja en un plan para bajar las emisiones de carbono y
+        no superar un
+        aumento de la temperatura global.</span>
+    </div>
+  -->
+
+    <img class="cierre-gral" id="cierre-gral" src="img/paises/cerrar.png">
+    <img class="logo" src="img/mapageo/logo.png" alt="">
+
+    <h3 class="tit-bsc">Situación mundial</h3>
+    <h4 class="sub-tit-bsc">con el Acuerdo de París</h4>
+
+
+
+    <div class="row txt-bsc ">
+      <p> Conocé la situación individual de distintos países, su emisión de CO2 y su relación con el Acuerdo de París</p>
+
+    </div>
+
+    <hr>
+    <div class="grafico">
+      <p id="efigrafe">Producción de CO2 en kilotoneladas</p>
+      <canvas id="myChart-bsc"  height="180px"></canvas>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+  <!--////////////////////////////ARGENTINA/////////////////////////////////-->
+  <div class="col-izq arg">
+    <div class="tarjeta">
+
+      <div class="tooltip"><img class="info-arg" src="img/paises/info.png">
+        <span class="tooltiptext" style="width:200px;">El país trabaja en un plan para bajar las emisiones de carbono y
+          no superar un
+          aumento de la temperatura global.</span>
+      </div>
+
+      <img class="bandera" src="img/paises/ArgentinaB.png" alt="">
+      <h3 class="pais">Argentina</h3>
+
+      <img class="cerrar-arg" id="cierre-arg" src="img/paises/cerrar.png">
+
+      <div class="row">
+        <p> <b>Población</b>: 44.49 millones</p>
+        <p> <b>Estado Económico</b>: País en desarrollo</p>
+        <p> <b>Estado del Acuerdo</b>: Miembro</p>
+        <p> <b>Nivel de compromiso</b>: <span style="color: #d15e3e"><b> Bajo</b></span></p>
+      </div>
+
+      <hr>
+      <div class="grafico">
+        <p id="efigrafe">Producción de CO2 en kilotoneladas</p>
+        <canvas id="myChart-arg"  height="180px"></canvas>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!--////////////////////////////BRASIL/////////////////////////////////-->
+    <div class="col-izq br">
+      <div class="tarjeta">
+
+        <div class="tooltip"><img class="info-br" src="img/paises/info.png">
+          <span class="tooltiptext" style="width:200px;">El país pone en peligro los objetivos debido a las políticas
+            antiambientales, de cambio climático y deforestación del presidente Jair Bolsonaro.
+          </span>
+        </div>
+
+        <img class="bandera" src="img/paises/Brasil.png" alt="">
+        <h3 class="pais">Brasil</h3>
+
+        <img class="cerrar-br" id="cierre-br" src="img/paises/cerrar.png">
+
+        <div class="row">
+          <p> <b>Población</b>: 209.5 millones</p>
+          <p> <b>Estado Económico</b>: País en desarrollo</p>
+          <p> <b>Estado del Acuerdo</b>: Miembro</p>
+          <p> <b>Nivel de compromiso</b>: <span style="color: #d15e3e"><b>Escaso</b> </span></p>
+        </div>
+        <hr>
+        <div class="grafico">
+          <p id="efigrafe">Producción de CO2 en kilotoneladas</p>
+          <canvas id="myChart-br"  height="180px"></canvas>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+  <!--////////////////////////////CANADA/////////////////////////////////-->
+    <div class="col-izq can">
+      <div class="tarjeta">
+
+        <div class="tooltip"><img class="info-can" src="img/paises/info.png">
+          <span class="tooltiptext" style="width:200px;">El país no toma las medidas correspondientes para reducir las
+            emisiones.</span>
+        </div>
+
+        <img class="bandera" src="img/paises/Canada.png" alt="">
+        <h3 class="pais">Canadá</h3>
+
+        <img class="cerrar-can" id="cierre-can" src="img/paises/cerrar.png">
+
+        <div class="row">
+          <p> <b>Población</b>: 37.59 millones</p>
+          <p> <b>Estado Económico</b>: País desarrollo</p>
+          <p> <b>Estado del Acuerdo</b>: Miembro</p>
+          <p> <b>Nivel de compromiso</b>: <span style="color: #d15e3e"><b> Bajo</b></span></p>
+        </div>
+        <hr>
+        <div class="grafico">
+          <p id="efigrafe">Producción de CO2 en kilotoneladas</p>
+          <canvas id="myChart-can"  height="180px"></canvas>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+  <!--////////////////////////////ESTADOS UNIDOS/////////////////////////////////-->
+    <div class="col-izq eeuu">
+      <div class="tarjeta">
+
+        <div class="tooltip"><img class="info-eeuu" src="img/paises/info.png">
+          <span class="tooltiptext" style="width:200px;"> El país volverá a integrarse al acuerdo climático tras la
+            retirada de Trump del mandato.</span>
+        </div>
+
+        <img class="bandera" src="img/paises/USA.png" alt="">
+        <h3 class="pais" id="eu">Estados Unidos</h3>
+
+        <img class="cerrar-eeuu" id="cierre-eeuu" src="img/paises/cerrar.png">
+
+        <div class="row">
+          <p> <b>Población</b>: 320.2 millones</p>
+          <p> <b>Estado Económico</b>: País desarrollo</p>
+          <p> <b>Estado del Acuerdo</b>: Retirado</p>
+          <p> <b>Nivel de compromiso</b>: <span style="color: #a5413e"><b> Nulo</b></span></p>
+        </div>
+        <hr>
+        <div class="grafico">
+          <p id="efigrafe">Producción de CO2 en kilotoneladas</p>
+          <canvas id="myChart-usa"  height="180px"></canvas>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+  <!--////////////////////////////CHINA/////////////////////////////////-->
+    <div class="col-izq china1">
+      <div class="tarjeta">
+
+        <div class="tooltip"><img class="info-china" src="img/paises/info.png">
+          <span class="tooltiptext" style="width:200px;">El país promoverá el establecimiento de un mecanismo de
+            gobernanza climática global equitativo, racional y de mutuo beneficio.</span>
+        </div>
+
+        <img class="bandera" src="img/paises/China.png" alt="">
+        <h3 class="pais">China</h3>
+
+        <img class="cerrar-china" id="cierre-china" src="img/paises/cerrar.png">
+
+        <div class="row">
+          <p> <b>Población</b>: 1.393 mil millones</p>
+          <p> <b>Estado Económico</b>: País en desarrollo</p>
+          <p> <b>Estado del Acuerdo</b>: Miembro</p>
+          <p> <b>Nivel de compromiso</b>: <span style="color: #1ebd65"> <b>Alto</b></span></p>
+        </div>
+        <hr>
+        <div class="grafico">
+          <p id="efigrafe">Producción de CO2 en kilotoneladas</p>
+          <canvas id="myChart-china"  height="180px"></canvas>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+  <!--////////////////////////////INDIA/////////////////////////////////-->
+    <div class="col-izq india1">
+      <div class="tarjeta">
+
+        <div class="tooltip"><img class="info-india" src="img/paises/info.png">
+          <span class="tooltiptext" style="width:200px;">El país premia por su apuesta por las renovables, pero debe
+            reducir su dependencia del carbón.</span>
+        </div>
+
+        <img class="bandera" src="img/paises/India.png" alt="">
+        <h3 class="pais">India</h3>
+
+        <img class="cerrar-india" id="cierre-india" src="img/paises/cerrar.png">
+
+        <div class="row">
+          <p> <b>Población</b>: 1.353 mil millones</p>
+          <p> <b>Estado Económico</b>: País en desarrollo</p>
+          <p> <b>Estado del Acuerdo</b>: Miembro</p>
+          <p> <b>Nivel de compromiso</b>: <span style="color: #1ebd65"> <b>Alto</b></span></p>
+        </div>
+        <hr>
+        <div class="grafico">
+          <p id="efigrafe">Producción de CO2 en kilotoneladas</p>
+          <canvas id="myChart-india"  height="180px"></canvas>
+
+        </div>
+
+      </div>
+    </div>
+
+  <!--////////////////////////////INDONESIA/////////////////////////////////-->
+    <div class="col-izq indo">
+      <div class="tarjeta">
+
+        <div class="tooltip"><img class="info-indo" src="img/paises/info.png">
+          <span class="tooltiptext" style="width:200px;">El país premia por su apuesta por las renovables, pero debe
+            reducir su dependencia del carbón.</span>
+        </div>
+
+        <img class="bandera" src="img/paises/indonesia.png" alt="">
+        <h3 class="pais">Indonesia</h3>
+
+        <img class="cerrar-indo" id="cierre-indo" src="img/paises/cerrar.png">
+
+        <div class="row">
+          <p> <b>Población</b>: 267.7 millones</p>
+          <p> <b>Estado Económico</b>: País en desarrollo</p>
+          <p> <b>Estado del Acuerdo</b>: Miembro</p>
+          <p> <b>Nivel de compromiso</b>: <span style="color: #1ebd65"> <b>Alto</b></span></p>
+        </div>
+        <hr>
+        <div class="grafico">
+          <p id="efigrafe">Producción de CO2 en kilotoneladas</p>
+          <canvas id="myChart-indo"  height="180px"></canvas>
+
+        </div>
+      </div>
+    </div>
+
+  <!--////////////////////////////MEXICO/////////////////////////////////-->
+    <div class="col-izq mx">
+      <div class="tarjeta">
+
+        <div class="tooltip"><img class="info-mx" src="img/paises/info.png">
+          <span class="tooltiptext" style="width:200px;">El país se aleja del acuerdo tras conflictos con su política
+            energética.</span>
+        </div>
+
+        <img class="bandera" src="img/paises/mexico.png" alt="">
+        <h3 class="pais">Mexico</h3>
+
+        <img class="cerrar-mx" id="cierre-mx" src="img/paises/cerrar.png">
+
+        <div class="row">
+          <p> <b>Población</b>: 126.2 millones</p>
+          <p> <b>Estado Económico</b>: País en desarrollo</p>
+          <p> <b>Estado del Acuerdo</b>: Miembro</p>
+          <p> <b>Nivel de compromiso</b>: <span style="color: #d15e3e"><b>Bajo</b></span></p>
+        </div>
+        <hr>
+        <div class="grafico">
+          <p id="efigrafe">Producción de CO2 en kilotoneladas</p>
+          <canvas id="myChart-mx"  height="180px"></canvas>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+  <!--////////////////////////////PERU/////////////////////////////////-->
+    <div class="col-izq peru1">
+      <div class="tarjeta">
+
+        <div class="tooltip"><img class="info-peru" src="img/paises/info.png">
+          <span class="tooltiptext" style="width:200px;">El país no ratifica el acuerdo hasta que sea liberado de las
+            sanciones que contempladas.</span>
+        </div>
+
+        <img class="bandera" src="img/paises/peru.png" alt="">
+        <h3 class="pais">Peru</h3>
+
+        <img class="cerrar-peru" id="cierre-peru" src="img/paises/cerrar.png">
+
+        <div class="row">
+          <p> <b>Población</b>: 31.99 millones</p>
+          <p> <b>Estado Económico</b>: País en desarrollo</p>
+          <p> <b>Estado del Acuerdo</b>: Miembro</p>
+          <p> <b>Nivel de compromiso</b>: <span style="color: #1ebd65"><b> Alto</b></span></p>
+        </div>
+        <hr>
+        <div class="grafico">
+          <p id="efigrafe">Producción de CO2 en kilotoneladas</p>
+          <canvas id="myChart-peru"  height="180px"></canvas>
+
+        </div>
+
+      </div>
+    </div>
+
+  <!--////////////////////////////TURQUIA/////////////////////////////////-->
+    <div class="col-izq tq">
+      <div class="tarjeta">
+
+        <div class="tooltip"><img class="info-tq" src="img/paises/info.png">
+          <span class="tooltiptext" style="width:200px;">El país no ratifica el acuerdo hasta que sea liberado de las
+            sanciones que contempladas.</span>
+        </div>
+
+        <img class="bandera" src="img/paises/turquia.png" alt="">
+        <h3 class="pais">Turquia</h3>
+
+        <img class="cerrar-tq" id="cierre-tq" src="img/paises/cerrar.png">
+
+        <div class="row">
+          <p> <b>Población</b>: 82 millones</p>
+          <p> <b>Estado Económico</b>: País en desarrollo</p>
+          <p> <b>Estado del Acuerdo</b>: No Ratificado </p>
+          <p> <b>Nivel de compromiso</b>: <span style="color: #a5413e"><b> Nulo </b></span></p>
+        </div>
+        <hr>
+        <div class="grafico">
+          <p id="efigrafe">Producción de CO2 en kilotoneladas</p>
+          <canvas id="myChart-tq"  height="180px"></canvas>
+
+        </div>
+
+
+
+
+
+
+      </div>
+    </div>
+
+
+  <script type="text/javascript" src="js/mapa.js"> </script>
+  <script type="text/javascript" src="js/tarjetas.js"> </script>
+</body>
+
+</html>

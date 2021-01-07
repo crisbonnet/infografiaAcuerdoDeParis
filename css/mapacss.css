@@ -1,0 +1,264 @@
+﻿body {
+  background-color: #0f141a;
+  color: white;
+}
+
+.contenedor {
+  background-color: #2b353b;
+  width: 1200px;
+  height: 550px;
+  margin-left: 5%;
+  position: relative;
+  z-index: 0;
+  clear: both;
+}
+
+.zoom {
+  transition: transform .2s;
+}
+
+.zoom:hover {
+  transform: scale(1.15);
+  cursor: pointer;
+}
+
+/*PAÍSES*/
+.mapa {
+  width: 81%;
+  margin-left: 26%;
+  margin-top: 5%;
+}
+
+
+.argentina {
+  position: absolute;
+  top: 80.1%;
+  left: 48.9%;
+  width: 56px;
+}
+
+.estadosunidos {
+  position: absolute;
+    top: 42%;
+    left: 38.8%;
+    width: 140px;
+}
+
+.peru {
+  position: absolute;
+  top: 67.2%;
+  left: 47.5%;
+  width: 39px;
+}
+
+.mexico {
+  position: absolute;
+  top: 52.5%;
+  left: 40.9%;
+  width: 65px;
+}
+
+.brasil {
+  position: absolute;
+  top: 65.6%;
+    left: 49.8%;
+    width: 92px;
+}
+
+.canada {
+  position: absolute;
+  top: 20.8%;
+  left: 36.6%;
+  width: 210px;
+}
+
+
+.china {
+  position: absolute;
+  top: 36.5%;
+  left: 78.8%;
+  width: 171px;
+}
+
+.turquia {
+  position: absolute;
+  top: 45%;
+    left: 69.8%;
+    width: 43px;
+}
+
+.india {
+  position: absolute;
+  top: 51.3%;
+    left: 78.4%;
+    width: 66px;
+}
+
+.indonesia {
+  position: absolute;
+  top: 63.8%;
+  left: 83.8%;
+  width: 115px;
+}
+
+/*MENÚ RESPONSIVE*/
+/*ESQUELETO*/
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  width: 89%;
+  padding-left: 11%;
+  z-index: 2;
+}
+
+/*DETALLES*/
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  font-family: "Quicksand";
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 10px;
+}
+
+/*POR DONDE PASA EL MOUSE*/
+.topnav a:hover {
+  background-color: #44c0c4;
+  color: black;
+}
+
+/*EL ACTIVO*/
+.topnav a.active {
+  background-color: #088c96;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.logo{
+  padding-left: 3vw;
+  padding-top: 5vh;
+  float: left;
+  width:10%;
+}
+
+/*///////////////////////////////////////////////MEDIA QUERY//////////////////////////////////////////////*/
+
+/*MEDIA QUERY*/
+@media screen and (max-width: 640px) {
+  .topnav {
+    padding-left: 0%;
+    width: 100%;
+  }
+
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .contenedor {
+    width: 200%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
+  .mapa {
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  .argentina {
+    position: absolute;
+    top: 75%;
+    left: 28%;
+    width: 60px;
+  }
+
+  .estadosunidos {
+    position: absolute;
+    top: 37.4%;
+    left: 15.4%;
+    width: 150px;
+  }
+
+  .peru {
+    position: absolute;
+    top: 65.7%;
+    left: 27%;
+    width: 34px;
+  }
+
+  .mexico {
+    position: absolute;
+    top: 48%;
+    left: 18%;
+    width: 72px;
+  }
+
+  .brasil {
+    position: absolute;
+    top: 62.5%;
+    left: 29%;
+    width: 95px;
+  }
+
+  .canada {
+    position: absolute;
+    top: 21%;
+    left: 12%;
+    width: 230px;
+    height: 106px;
+  }
+
+  .china {
+    position: absolute;
+    top: 38.7%;
+    left: 66.4%;
+    width: 141px;
+  }
+
+  .turquia {
+    position: absolute;
+    top: 42%;
+    left: 54%;
+    width: 56px;
+  }
+
+  .india {
+    position: absolute;
+    top: 49%;
+    left: 65%;
+    width: 67px;
+  }
+
+  .indonesia {
+    position: absolute;
+    top: 61%;
+    left: 71.5%;
+    width: 111px;
+  }
+}

@@ -1,0 +1,491 @@
+*{
+  padding:0%;
+  margin: 0%;
+}
+:root{
+
+  --fondo: #2b353b;
+  --texto-blanco: #fff;
+  --texto-celeste: #44c0c4;
+  --rojo: #c54320;
+  --tarjeta-plana: #035263;
+  --tarjeta-borde: #82bcbe;
+  --circulo-timeline: #088c96;
+  --linea-timeline: #44c0c4;
+  --flecha-nav: #a0a0a0;
+}
+
+body{
+  background-color: var(--fondo);
+  color: white;
+}
+
+
+h1{margin-top: 1%;
+  color: var(--texto-celeste);
+  text-align: center;
+  font-size: 1.5vW;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  display:none;
+}
+
+p{
+  color: var(--texto-blanco);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.4vW;
+}
+
+canvas{
+  color: #fff;
+  width:200px ;
+  height:400px;
+}
+
+hr{
+  position: relative;
+  top: 2.5%;
+  width: 82%;
+  border: 1px solid grey;
+  margin-left: 9%;
+  margin-bottom: 3%;
+  opacity: 0.4;
+
+}
+
+/* paises activables*/
+
+.basica{
+  display:block;
+}
+
+.arg{
+  display:none;
+}
+.br{
+  display: none;
+}
+.can{
+  display: none;
+}
+.eeuu {
+  display: none;
+}
+.china1{
+  display: none;
+}
+.india1 {
+  display: none;
+}
+.indo{
+  display: none;
+}
+.mx{
+  display: none;
+}
+.peru1{
+  display: none;
+}
+.tq{
+  display: none;
+}
+
+
+/* Columna derecha */
+.col-der{
+  float: right;
+  width: 40%;
+  height: 77vh;
+  margin-top: -23vw;height: 3px;
+  margin-right: 0vw;
+  z-index: 3;
+  position: relative;
+
+}
+
+.container{
+  margin-top: 4%;
+  margin-left: 12%;
+  margin-bottom: 2%;
+  padding-right: 10%;
+}
+
+/*Columna Izquierda*/
+.col-izq{
+  float: left;
+  width: 30%;
+  height: 77vh;
+  margin-top: -23vw;
+  height: 3px;
+  margin-left: 0vw;
+  z-index: 3;
+  position: relative;
+
+}
+
+#efigrafe {
+  font-size: 1.3vw;
+  text-align: left;
+  margin-bottom: 3%;
+  margin-left: 2%;
+  margin-top: 0%;
+}
+
+
+/*Botones Arg*/
+.cerrar-arg {
+  position: absolute;
+  width: 4%;
+  padding: 4% 0% 0% 3%;
+}
+
+.info-arg{
+  width: 5%;
+  padding: 3.4% 0% 0% 18%;
+  transition: transform .2s;
+}
+
+/*Botones Br*/
+.cerrar-br {
+  position: absolute;
+  width: 4%;
+  padding: 4% 0% 0% 3%;
+}
+
+.info-br {
+  width: 5%;
+  padding: 3.4% 0% 0% 32%;
+  transition: transform .2s;
+}
+
+/*Botones Can*/
+.cerrar-can {
+  position: absolute;
+  width: 4%;
+  padding: 4% 0% 0% 3%;
+}
+
+.info-can {
+  width: 5%;
+  padding: 3.4% 0% 0% 26%;
+  transition: transform .2s;
+}
+
+/*Botones EEUU*/
+.cerrar-eeuu {
+  position: absolute;
+    width: 4%;
+    padding: 4% 0% 0% 2%;
+}
+
+.info-eeuu {
+  width: 5%;
+  position: relative;
+  right: 1%;
+  padding: 3.4% 0% 0% 0%;
+  transition: transform .2s;
+}
+
+/*Botones China*/
+.cerrar-china {
+  position: absolute;
+  width: 4%;
+  padding: 4% 0% 0% 2.6%;
+}
+
+.info-china{
+  width: 5%;
+  padding: 3.4% 0% 0% 33%;
+  transition: transform .2s;
+}
+
+/*Botones India*/
+.cerrar-india {
+  position: absolute;
+  width: 4%;
+  padding: 4% 0% 0% 3%;
+}
+
+.info-india{
+  width: 5%;
+  padding: 3.4% 0% 0% 35%;
+  transition: transform .2s;
+}
+
+/*Botones Indonesia*/
+.cerrar-indo {
+  position: absolute;
+  width: 4%;
+  padding: 4% 0% 0% 3%;
+}
+
+.info-indo{
+  width: 5%;
+  padding: 3.4% 0% 0% 19%;
+  transition: transform .2s;
+}
+
+/*Botones Mexico*/
+.cerrar-mx {
+  position: absolute;
+  width: 4%;
+  padding: 4% 0% 0% 3%;
+}
+
+.info-mx{
+  width: 5%;
+  padding: 3.4% 0% 0% 29%;
+  transition: transform .2s;
+}
+
+/*Botones Peru*/
+.cerrar-peru {
+  position: absolute;
+  width: 4%;
+  padding: 4% 0% 0% 3%;
+}
+
+.info-peru{
+  width: 5%;
+  padding: 3.4% 0% 0% 37%;
+  transition: transform .2s;
+}
+
+/*Botones Turquia*/
+.cerrar-tq {
+  position: absolute;
+  width: 4%;
+  padding: 4% 0% 0% 3%;
+}
+
+.info-tq{
+  width: 5%;
+  padding: 3.4% 0% 0% 26%;
+  transition: transform .2s;
+}
+
+
+.info:hover {
+  transform: scale(1.05);
+}
+
+#col-chart{
+  color:#fff;
+}
+
+
+
+.pais{
+  float: left;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.8vW;
+  font-style: bold;
+  color: var(--texto-blanco);
+  letter-spacing: 0.1em;
+  padding-top: 6vh;
+  padding-left: 1vw;
+}
+
+.tit-bsc{
+  float: left;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.8vW;
+  font-style: bold;
+  color: var(--texto-blanco);
+  letter-spacing: 0.1em;
+  padding-top: 6vh;
+  padding-left: 0vw;
+}
+
+.sub-tit-bsc{
+  float: left;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.35vW;
+  font-style: normal;
+  color: var(--texto-blanco);
+  letter-spacing: 0.1em;
+  padding-top: 0vh;
+  padding-left: 6vw;
+  padding-bottom: 3vh;
+}
+
+.tarjeta{
+  width: 99%;
+  height: 92vh;
+   border-radius: 10px;
+  background: var(--tarjeta-plana);
+  margin-left: 0%;
+  position: relative;
+  margin-top: -37vh;
+}
+
+.tarjeta p{
+  padding-left: 0rem;
+  padding-top: 0.1rem;
+  float: left;
+  width: 93%;
+font-size:1.2vw ;
+  margin-left: 10%;
+  clear: both;
+}
+
+.tarjeta .grafico {
+  padding-left: 0vw;
+  padding-top: 4vh;
+  float: left;
+  width: 85%;
+
+  margin-left: 2.2vw;
+}
+
+.tarjeta .bandera {
+  padding: 5vh 0vw 4vh 3vw;
+  float: left;
+width: 19%;
+}
+
+.tarjeta .row{
+  margin-top:12%;
+
+
+}
+
+.tooltip {
+  position: relative;
+  display: contents;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #088c96;
+  color: #fff;
+  border-radius: 6px;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 15px;
+  padding: 15px;
+  position: absolute;
+
+
+  /* Position the tooltip */
+  z-index: 1;
+  top: 25px;
+  right: 20%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.txt-bsc{
+  padding-right: 14%;
+
+}
+
+.cierre-gral { display: none;}
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media screen and (max-width: 640px) {
+  .col-izq {
+    width: 90%;
+    margin-top: -18%;
+  }
+
+
+
+.tit-bsc {
+float: none;
+font-size: 5vw;
+padding-left: 18vw;
+}
+
+.sub-tit-bsc {
+float: none;
+font-size: 3vw;
+padding-left: 21vw;
+}
+
+.cierre-gral {
+width: 4%;
+padding: 5.5% 0% 0% 90%;
+position: absolute;
+display: block;
+}
+
+  .tarjeta {
+    width: 100%;
+    margin-left: 5%;
+    margin-top: -62vh;
+
+  }
+
+  .tarjeta .bandera {
+    padding-top: 8vH;
+    padding-left: 6vW;
+    width: 30%;
+  }
+
+  .tarjeta .row { margin-top: 0%;  }
+
+  .tarjeta p {font-size: 3.5vw;}
+
+  p { font-size: 3vW; }
+
+  #efigrafe { font-size: 3vw; }
+
+  .pais {
+    font-size: 6vW;
+    padding-left: 5vW;
+    padding-top: 10vH;
+  }
+  #eu {font-size: 4vW;}
+
+  /* BOTONES DE CADA TARJETA DE CADA PAIS ACA */
+
+  .info-can {display: none; }
+  .cerrar-can {width: 6%; padding:5.5% 0% 0% 14%; }
+
+  .info-eeuu {display: none; }
+  .cerrar-eeuu {width: 6%; padding:5.5% 0% 0% 3%; }
+
+  .info-mx {display: none; }
+  .cerrar-mx {width: 6%; padding:5.5% 0% 0% 16%; }
+
+  .info-br {display: none; }
+  .cerrar-br {width: 6%; padding:5.5% 0% 0% 20%; }
+
+  .info-peru {display: none; }
+  .cerrar-peru {width: 6%; padding:5.5% 0% 0% 24%; }
+
+  .info-arg {display: none; }
+  .cerrar-arg {width: 6%; padding:5.5% 0% 0% 3%; }
+
+  .info-tq {display: none; }
+  .cerrar-tq {width: 6%; padding:5.5% 0% 0% 14%; }
+
+  .info-india {display: none; }
+  .cerrar-india {width: 6%; padding:5.5% 0% 0% 20%; }
+
+  .info-indo {display: none; }
+  .cerrar-indo {width: 6%; padding:5.5% 0% 0% 3%; }
+
+  .info-china {display: none; }
+  .cerrar-china {width: 6%; padding:5.5% 0% 0% 20%; }
+
+}

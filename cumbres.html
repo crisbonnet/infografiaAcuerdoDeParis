@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="css/estilo-cumbres.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>Principales Cumbres Climáticas</title>
+</head>
+
+<body>
+  <!--//////////////////////////////POP UP LIGHTBOX////////////////-->
+
+  <div id='popup_bg'></div>
+    <div class="popup" id='popup'>
+      <div class="cerrar" id='cerrar'><a href='javascript:void(0)'><img src="img/paises/cerrar.png" width="15px"></a></div>
+      <div class="contenidop" id='popup_contenido'> <img src="img/cumbres/hoja.png" width="70px"> <br><br>
+        Previamente a la <b>Cumbre de París del 2015</b>, múltiples proyectos intentaron inicializar una propuesta medioambiental, sin embargo, no resultaron exitosos. Este fue el camino recorrido.</div>
+    </div>
+
+  <!--//////////////////////////////NAVBAR////////////////-->
+  <div class="topnav" id="myTopnav">
+    <a href="index.html">Home</a>
+    <a href="#historia" class="active">Cumbres Relevantes</a>
+    <a href="mapa.html">Situación Mundial</a>
+    <a href="plan de accion.html">Ejes del Acuerdo</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+
+  <div>
+    <br>
+    <!--<h1>Principales Cumbres Climáticas</h1>-->
+
+    <!--////////////////////////////TIMELINE/////////////////////////////////-->
+
+    <div class="container-timeline">
+
+      <div class="col-timeline">
+        <div class="circulo circulo-activo" id="1979">
+          <p class="circulo-centrar circulo-centrar-activo" id="1979-centrar">1979</p>
+        </div>
+      </div>
+
+      <div class="col-timeline">
+        <div class="circulo" id="1992">
+          <p class="circulo-centrar" id="1992-centrar">1992</p>
+        </div>
+      </div>
+
+      <div class="col-timeline">
+        <div class="circulo" id="1995">
+          <p class="circulo-centrar" id="1995-centrar">1995</p>
+        </div>
+      </div>
+
+      <div class="col-timeline">
+        <div class="circulo" id="1997">
+          <p class="circulo-centrar" id="1997-centrar">1997</p>
+        </div>
+      </div>
+
+      <div class="col-timeline">
+        <div class="circulo" id="2007">
+          <p class="circulo-centrar" id="2007-centrar">2007</p>
+        </div>
+      </div>
+
+      <div class="col-timeline">
+        <div class="circulo" id="2009">
+          <p class="circulo-centrar" id="2009-centrar">2009</p>
+        </div>
+      </div>
+
+      <div class="col-timeline">
+        <div class="circulo" id="2010">
+          <p class="circulo-centrar" id="2010-centrar">2010</p>
+        </div>
+      </div>
+
+      <div class="col-timeline">
+        <div class="circulo" id="2013">
+          <p class="circulo-centrar" id="2013-centrar">2013</p>
+        </div>
+      </div>
+
+      <div class="col-timeline">
+        <div class="circulo" id="2015">
+          <p class="circulo-centrar" id="2015-centrar">2015</p>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <div id="myProgress">
+      <div id="myBar"></div>
+    </div>
+    <!--////////////////////////////TIMELINE/////////////////////////////////-->
+
+    <!--/////////////////////////////////////// SUIZA 1979////////////////////////////-->
+    <div class="container suiza-1979">
+      <div class="col-izq">
+        <div class="row">
+    <a href="https://es.wikipedia.org/wiki/Suiza" class="custom"><img src="img/cumbres/paises2/suiza.png" class="bandera"></a>
+          <h3 class="pais">Ginebra, Suiza</h3>
+        </div>
+
+        <div class="row">
+          <p class="frase">Primera conferencia de las <br>Naciones Unidas sobre el clima</p>
+        </div>
+
+        <img class="chica-suiza" src="img/cumbres/chica de suiza.png" alt="">
+      </div>
+
+      <div class="col-der">
+        <div class="tarjeta-plana-suiza">
+          <p class="letra-suiza">Se firmaron dos declaraciones que exigían a los gobiernos
+            a prever y evitar los posibles cambios en el clima.</p>
+          <div class="row">
+            <img src="img/cumbres/lista-de-verificacion.png" width="16%" alt="">
+            <p class="text">Agenda Climática <br> Global</p>
+          </div>
+          <div class="row2">
+            <img src="img/cumbres/contrato.png" width="17%" alt="">
+            <p class="text">Programa Mundial <br> de Investigaciones <br> Climáticas</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--/////////////////////////////////////// BRASIL 1992////////////////////////////-->
+
+    <div class="container brasil-1992">
+      <div class="col-izq">
+        <div class="row">
+          <a href="https://es.wikipedia.org/wiki/Brasil"><img src="img/cumbres/paises2/brasil.png" class="bandera"></a>
+          <h3 class="pais">Río de Janeiro, Brasil</h3>
+        </div>
+
+        <div class="row">
+          <p class="frase">Conferencia de Naciones Unidas <br> sobre el Medio Ambiente y <br> el Desarrollo
+          </p>
+        </div>
+        <div class="tarjeta-borde-brasil">
+          <p>Se crea la <b>Convención Marco <br> de las Naciones Unidas sobre <br> el Cambio Climático</b>
+            que <br> establece las bases y procedimientos <br> para futuras convenciones.</p>
+          <img id="logo-cumbre" src="img/cumbres/cmnucc.png" width="15%" alt="">
+        </div>
+      </div>
+
+      <div class="col-der">
+        <div class="tarjeta-plana-brasil">
+          <p>Se adopta el programa de acción para el desarrollo sostenible
+            <b>Agenda 21</b> que propone:
+          </p>
+          <div class="row">
+            <img src="img/cumbres/tilde.png" width="10%" alt="">
+            <p class="text">Lucha contra el Cambio<br> Climático</p>
+          </div>
+          <div class="row">
+            <img src="img/cumbres/tilde.png" width="10%" alt="">
+            <p class="text" id="tilde2">Protección de la <br> biodiversidad</p>
+          </div>
+
+          <div class="row">
+            <img src="img/cumbres/tilde.png" width="10%" alt="">
+            <p class="text">Eliminación de sustancias <br> tóxicas emitidas</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--/////////////////////////////////////// ALEMANIA 1995////////////////////////////-->
+
+    <div class="container alemania-1995">
+      <div class="col-izq">
+        <div class="row">
+          <a href="https://es.wikipedia.org/wiki/Alemania"><img src="img/cumbres/paises2/alemania.png" class="bandera"></a>
+          <h3 class="pais">Berlín, Alemania</h3>
+        </div>
+
+        <div class="row">
+          <p class="frase"> <b>COP1</b> <br> Primera <b>Conferencia de las Partes</b></p>
+        </div>
+
+        <div class="tarjeta-borde-alemania">
+          <p>Es organizada por las <br>naciones (partes) que <br> firmaron la <b>
+              Convención <br> Marco de las Naciones <br> Unidas por el Cambio Climático</b><br>
+            (CMNUCC)</b> </p>
+          <img id="logo-cumbre2" src="img/cumbres/cmnucc.png" width="15%" alt="">
+
+        </div>
+
+      </div>
+
+      <div class="col-der">
+        <div class="tarjeta-plana-alemania">
+          <p>Se firma el <b>Mandato de Berlín</b> </p>
+          <div class="row">
+            <img src="img/cumbres/reglas.png" width="24%" alt="">
+            <p class="text">"todas las partes deben <br> iniciar negociaciones <br> para reducir la emisión
+              <br>
+              de gases de efecto <br> invernadero"
+            </p>
+          </div>
+        </div>
+
+        <img class="chica-alemania" src="img/cumbres/chica alemania.png" alt="">
+
+      </div>
+
+
+    </div>
+
+    <!--/////////////////////////////////////// JAPON 1997////////////////////////////-->
+
+    <div class="container japon-1997">
+      <div class="col-izq">
+        <div class="row">
+          <a href="https://es.wikipedia.org/wiki/Jap%C3%B3n"><img src="img/cumbres/paises2/japon.png" class="bandera"></a>
+          <h3 class="pais">Kioto, Japón</h3>
+        </div>
+
+        <div class="row">
+          <p class="frase"> <b>COP3</b> <br> <span style="color:var(--texto-celeste);">Repercusión
+              mundial</span></p>
+        </div>
+
+        <img class="periodicos" src="img/cumbres/periodicos kioto.png" alt="">
+
+      </div>
+
+      <div class="col-der">
+        <div class="tarjeta-plana-japon">
+          <p>Se adopta el <b>Protocolo de Kioto</b>:</p>
+          <div class="row">
+            <img src="img/cumbres/tilde.png" width="10%" alt="">
+            <p class="text">Primer gran acuerdo<br> de las COP</p>
+          </div>
+          <div class="row">
+            <img src="img/cumbres/tilde.png" width="10%" alt="">
+            <p class="text" id="tilde2">193 países se <br> adhieren </p>
+          </div>
+
+          <div class="row">
+            <img src="img/cumbres/tilde.png" width="10%" alt="">
+            <p class="text">Es vinculante (implica <br> responsabilidad legal)</p>
+          </div>
+          <div class="row">
+            <img src="img/cumbres/tilde.png" width="10%" alt="">
+            <p class="text">Reducción de gases de <br> efecto invernadero a 5.2%</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!--/////////////////////////////////////// INDONESIA 2007////////////////////////////-->
+
+    <div class="container indonesia-2007">
+      <div class="col-izq">
+        <div class="row">
+          <a href="https://es.wikipedia.org/wiki/Indonesia"><img src="img/cumbres/paises2/indonesia.png" class="bandera"></a>
+          <h3 class="pais">Bali, Indonesia</h3>
+        </div>
+
+        <div class="row">
+          <p class="frase"> <b>COP13</b> </p>
+        </div>
+
+        <img class="chiques-indonesia" src="img/cumbres/chiques indonesia.png" alt="">
+
+      </div>
+
+      <div class="col-der">
+        <div class="tarjeta-plana-indonesia">
+          <p>Se fija el <b> de Acción de Bali</b>:</p>
+          <div class="row">
+            <img src="img/cumbres/negociacion.png" width="22%" alt="">
+            <p class="text">Prepara negociaciones <br> para un nuevo <br> en la COP 15</p>
+          </div>
+          <div class="row">
+            <img src="img/cumbres/molinos.png" width="22%" alt="">
+            <p class="text">Establece estartegias <br>tecnológicas y <br>financieras contra el <br>
+              calentamiento global</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!--/////////////////////////////////////// DINAMARCA 2009////////////////////////////-->
+
+    <div class="container dinamarca-2009">
+      <div class="col-izq">
+        <div class="row">
+          <a href="https://es.wikipedia.org/wiki/Dinamarca"><img src="img/cumbres/paises2/dinamarca.png" class="bandera"></a>
+          <h3 class="pais">Copenhague, Dinamarca</h3>
+        </div>
+
+        <div class="row">
+          <p class="frase"> <b>COP15</b> <br> <br> <span style="color:var(--texto-celeste);">
+              Muchas expectativas para la cumbre <br> más esperada que no llegó a buen término </span></p>
+
+        </div>
+
+        <img class="chico-dinamarca" src="img/cumbres/chico dinamarca.png" alt="">
+
+      </div>
+
+      <div class="col-der">
+        <div class="tarjeta-plana-dinamarca">
+          <p><b> Acuerdo de Copenhague</b></p>
+          <div class="row">
+            <img src="img/cumbres/cruz dinamarca.png" width="10%" alt="">
+            <p class="text">Propone objetivos<br> muy ambiciosos</p>
+          </div>
+          <div class="row">
+            <img src="img/cumbres/cruz dinamarca.png" width="10%" alt="">
+            <p class="text" id="tilde2">No determina cómo <br>lograr los objetivos </p>
+          </div>
+
+          <div class="row">
+            <img src="img/cumbres/cruz dinamarca.png" width="10%" alt="">
+            <p class="text">No implica compromiso <br> legal (no vinculante)</p>
+          </div>
+          <div class="row">
+            <img src="img/cumbres/cruz dinamarca.png" width="10%" alt="">
+            <p class="text">Adhesión voluntaria, <br> no obligatoria</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!--/////////////////////////////////////// MÉXICO 2010////////////////////////////-->
+
+    <div class="container mexico-2010">
+      <div class="col-izq">
+        <div class="row">
+          <a href="https://es.wikipedia.org/wiki/M%C3%A9xico"><img src="img/cumbres/paises2/mexico.png" class="bandera"></a>
+          <h3 class="pais">Cancún, México</h3>
+        </div>
+        <div class="row">
+          <p class="frase"> <b>COP16</b></p>
+        </div>
+
+        <div class="tarjeta-borde-mexico">
+          <img id="ru-jap-can" src="img/cumbres/Rusia-Canada-Japon.png" alt="">
+          <p><span style="color:var(--circulo-timeline); font-weight: 700;">Rusia</span>,
+            <span style="color:var(--texto-celeste); font-weight: 700;">Japón</span> y
+            <span style="color:var(--tarjeta-borde); font-weight: 700;"> Canadá</span> trabajan en un nuevo
+            tratado que comprometa más a países desarrollados y sea vinculante
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="col-der">
+        <div class="tarjeta-plana-mexico">
+          <p class="titulo"><b> Fondo Verde para el Clima</b></p>
+
+          <div class="impar">
+            <div class="row">
+              <img src="img/cumbres/inversion.png" alt="">
+              <p class="text">U$S 30 mil millones <br> de inversión inicial</p>
+            </div>
+
+            <div class="row">
+              <img src="img/cumbres/bosque.png" alt="">
+              <p class="text">Protección <br>de bosques</p>
+            </div>
+          </div>
+
+          <div class="par">
+            <div class="row">
+              <img src="img/cumbres/energia.png" alt="">
+              <p class="text">Desarrollo de <br> energías limpias</p>
+            </div>
+
+            <div class="row">
+              <img id="ayuda" src="img/cumbres/ayuda.png" alt="">
+              <p class="text">Ayuda a países <br> en desarrollo</p>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+
+    <!--/////////////////////////////////////// POLONIA 2013////////////////////////////-->
+
+    <div class="container polonia-2013">
+      <div class="col-izq">
+        <div class="row">
+          <a href="https://es.wikipedia.org/wiki/Polonia"><img src="img/cumbres/paises2/polonia.png" class="bandera"></a>
+          <h3 class="pais">Varsovia, Polonia</h3>
+        </div>
+        <div class="row">
+          <p class="frase"> <b>COP19</b> <br><span style="color:var(--texto-celeste);">
+              La cumbre del fracaso y la farsa</span></p>
+          </p>
+        </div>
+        <img class="humor" src="img/cumbres/humos varsovia.png" alt="">
+        <p id="epigrafe">Viñeta sobre la COP 19. Autor:Bernardo Vergara. <br>
+          Fuente: blogs.publico/viñetas/</p>
+
+      </div>
+
+      <div class="col-der">
+        <div class="tarjeta-plana-polonia">
+          <p>La ONU presenta el informe <br><b>Cambio Climático 2013</b> </p>
+          <div class="row">
+            <img src="img/cumbres/informe-seo.png" alt="">
+            <p class="text">" el 95% de la causa del<br> cambio climático es la <br>
+              actividad humana "</p>
+          </div>
+        </div>
+
+        <div class="tarjeta-borde-polonia">
+          <div class="row">
+            <img src="img/cumbres/carbon.png" alt="">
+            <p class="text"> Los países que utilizan <br> carbón en su industria <br> sabotean los
+              acuerdos
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!--/////////////////////////////////////// FRANCIA 2015////////////////////////////-->
+
+    <div class="container francia-2015">
+      <div class="col-izq">
+        <div class="row">
+        <a href="https://es.wikipedia.org/wiki/Francia"><img src="img/cumbres/paises2/francia.png" class="bandera"></a>
+          <h3 class="pais">París, Francia</h3>
+        </div>
+        <div class="row">
+          <p class="frase"> <b>COP21</b> </p>
+          </p>
+        </div>
+        <img class="chicas-francia" src="img/cumbres/chicas francia.png" alt="">
+
+
+      </div>
+
+      <div class="col-der">
+        <div class="tarjeta-plana-francia">
+          <p>Se firma el <b> de Acuerdo de París</b></p>
+          <div class="row">
+            <img class="plano" src="img/cumbres/planisferio.png" alt="">
+            <p class="text">Es adoptado por 195 países</p>
+          </div>
+          <div class="row balanza">
+            <img src="img/cumbres/justicia.png" alt="">
+            <p class="text">Los compromisos dependen del nivel de desarrollo
+              e industrialización de cada país
+            </p>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <!--  este es el div de cierre del documento-->
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/js-cumbres.js"></script>
+
+</body>
+
+</html>

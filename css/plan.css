@@ -1,0 +1,219 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+:root {
+  --fondo: #2b353b;
+  --texto-blanco: #fff;
+  --texto-celeste: #44c0c4;
+  --rojo: #c54320;
+  --tarjeta-plana: #035263;
+  --tarjeta-borde: #82bcbe;
+  --circulo-timeline: #088c96;
+  --linea-timeline: #44c0c4;
+  --flecha-nav: #a0a0a0;
+}
+body {
+  background-color: #2b353b;
+}
+
+h1 {
+  font-family: "Open sans";
+  font-weight: 400;
+  text-align: center;
+  color: white;
+  padding-top: 1.5%;
+}
+
+p {
+  font-size: 1.6vW;
+  margin: 0%;
+}
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  width: 89%;
+  padding-left: 11%;
+}
+
+/*DETALLES*/
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  font-family: "Quicksand";
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 10px;
+}
+
+/*POR DONDE PASA EL MOUSE*/
+.topnav a:hover {
+  background-color: var(--texto-celeste);
+  color: black;
+}
+
+/*EL ACTIVO*/
+.topnav a.active {
+  background-color: #088c96;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.container-gral {
+  margin: 0% 12% 0% 12%;
+}
+
+.iconos {
+  display: flex;
+}
+.iconos .uno { padding-left: 0%;}
+.iconos img {
+  width: 10%;
+  padding: 4% 0% 4% 12.4%;
+}
+.segundo-contenedor{
+  display: inline-flex;
+}
+.tarjetas-plan {
+  background: #035263;;
+  border-radius: 10px;
+  padding: 4%;
+  height: 220px;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  width: 50%;
+  margin-top: 2%;
+}
+
+.tarjetas-plan .tarjeta-intro img {
+  width: 3%;
+  position: absolute;
+  padding: 0%;
+}
+.tarjetas-plan .tarjeta-intro .titulo-intro {
+  text-align: left;
+  font-weight: 600;
+  padding: 2% 0% 8% 16%;
+}
+.tarjetas-plan .tarjeta-intro .descripcion {text-align: left;}
+
+.tarjetas-plan .titulo {text-align: center;}
+.tarjetas-plan img {padding: 4% 0% 2% 0%;}
+.tarjetas-plan .img-accion1 {width: 16%; padding-left: 41%;}
+.tarjetas-plan .img-accion2 {width: 16%; padding-left: 42%;}
+.tarjetas-plan .img-accion3 {width: 29%; padding-left: 35%;}
+.tarjetas-plan .img-accion4 {width: 15%; padding-left: 41%;}
+.tarjetas-plan .img-accion5 {width: 55%; padding-left: 22%;}
+
+.tarjeta-intro {display: block;}
+
+.accion1 {display: none;}
+.accion2 {display: none;}
+.accion3 {display: none;}
+.accion4 {display: none;}
+.accion5 {display: none;}
+
+.ilustracion0 {display: block; width: 120%; padding-top: 10%;}
+.ilustracion1 {display: none; width: 120%; padding-top: 10%;}
+.ilustracion2 {display: none; width: 120%; padding-top: 10%;}
+.ilustracion3 {display: none; width: 120%; padding-top: 10%;}
+.ilustracion4 {display: none; width: 120%; padding-top: 10%;}
+.ilustracion5 {display: none; width: 120%; padding-top: 10%;}
+
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*MEDIA QUERY*/
+@media screen and (max-width: 640px) {
+  .topnav {
+    padding-left: 0%;
+    width: 100%;
+  }
+
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  p {font-size: 3.5vw;}
+
+  .iconos .uno { padding-left: 0%;}
+  .iconos img {
+    width: 25%;
+    padding: 4% 0% 4% 12.4%;
+  }
+
+.iconos .uno {
+    z-index:4;
+  }
+
+  .iconos .dos {
+    z-index:3;
+  }
+
+  .iconos .tres {
+    z-index:2;
+  }
+
+
+  .iconos .cuatro {
+    position: absolute;
+    padding: 23% 0% 0% 10%;
+    width: 22%;
+    z-index:1;
+  }
+  .iconos .cinco {
+    position: absolute;
+    padding: 23% 0% 0% 41%;
+    width: 22%;
+    z-index:0;
+  }
+
+  .ilustraciones {display: none;}
+
+  .tarjetas-plan {
+    width: 100%;
+    margin-top: 35%;
+    padding: 6% 7% 6% 8%;
+  }
+
+
+
+  .tarjetas-plan .tarjeta-intro img {
+    width: 6%;
+    padding-top: 2%;
+  }
+
+.tarjetas-plan .tarjeta-intro .titulo-intro {
+    padding-top: 5%;
+    padding-bottom: 13%;
+  }
+
+}
